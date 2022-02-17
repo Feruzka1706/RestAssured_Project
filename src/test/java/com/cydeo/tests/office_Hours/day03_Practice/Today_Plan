@@ -1,0 +1,75 @@
+Today Plan
+
+1.  get("/get_book_categories") 
+        
+        Task 1 : category types (don't use POJO)
+             send a request as a librarian
+             verify status code 200
+             verify content type json
+             verify each object in the response array contains id and name
+             verify that book categories are same in database
+
+        Task 2: category types
+            repeat the same test but do it utilizing category pojo
+
+2. post("/add_book")
+ 
+        Task 1 :  student cant add books.
+                send a request as a student to create a new book. 
+                use the LibraryUtil( already exist in Utility ) to create the book
+                verify content type json
+                verify status code 403
+                verify response body:
+                {
+                    "error": "Unauthorized Access",
+                   "details": "/add_book"
+               }    
+
+        Task 2 : librarian add books
+              send a request as a librarian to create a new book
+              verify status code 200
+              verify content type json
+              verify response contain "message": "The book has been created."
+
+        Task 3 : librarian add books
+              send a request as a librarian to create a new book
+              verify status code 200
+              extract the book_id
+              get the information using the get_book_by_id endpoint.
+              verify that book information is correct in the response payload
+              verify that book information is correct in database
+
+3.get("/api/campuses") 
+   
+    credentials: 
+        email : sbirdbj@fc2.com
+        password : asenorval
+    baseUri: "https://cybertek-reservation-api-qa3.herokuapp.com"
+    doc: https://cybertek-reservation-api-docs.herokuapp.com/#get-all-rooms
+
+        Task 1 :  Deserialization Exercise 
+                send a request to get all campuses
+                verify status code 200
+                Create an POJO to get all data 
+                        //Find out how many room  we have in light-side
+                        //Find out how many cluster we have in VA
+                        //Find out how many campus we have
+
+4.get("api/spartans")
+  
+  HomeWork 3 : Send request to  GET /spartans provide accept header to get XML response
+         // find out second name    
+         // find out last name
+         // find out all the male spartans name in one shot
+         // find out phoneNumber who is name Abcd in one shot
+
+
+5.SuiteApi
+    Try to run all testCases with the help of Tags 
+
+
+
+
+
+
+    

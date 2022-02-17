@@ -1,0 +1,16 @@
+import com.cydeo.pojo.Spartan;
+import com.cydeo.utility.SpartanTestBase;
+import com.cydeo.utility.SpartanUtil;
+import io.restassured.http.ContentType;
+import org.junit.jupiter.api.Test;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import io.restassured.http.ContentType;
+import static io.restassured.RestAssured.*;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
+import io.restassured.response.Response;
+

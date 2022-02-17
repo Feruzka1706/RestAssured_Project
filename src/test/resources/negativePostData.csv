@@ -1,0 +1,7 @@
+name,                 gender,     phone,        expectedErrorCount
+A   ,                 Male  ,     12344563728,    1
+A   ,                 Malezzz,    1234567231,     2
+A   ,                 ABC,         123,           3
+abcsdefg hijklmnop,   Male,       12354689212,    1
+abcsdefg hijklmnop,   123,        123643875483,   2
+RonaldinhoGaucho  ,   10,         999, 3
